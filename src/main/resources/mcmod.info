@@ -1,0 +1,16 @@
+[
+{
+  "modid": "matsimplemod",
+  "name": "Mat Mod",
+  "description": "really sucks",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["Mat"],
+  "credits": "ME",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
