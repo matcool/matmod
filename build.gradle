@@ -37,6 +37,11 @@ minecraft {
     // makeObfSourceJar = false // an Srg named sources jar is made by default. uncomment this to disable.
 }
 
+compileJava {
+  sourceCompatibility = '1.8'
+  targetCompatibility = '1.8'
+}
+
 dependencies {
     // you may put jars on which you depend on in ./libs
     // or you may define them like so..

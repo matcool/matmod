@@ -20,7 +20,7 @@ import net.minecraftforge.fml.common.network.FMLNetworkEvent;
 import net.minecraftforge.fml.client.registry.*;
 import rf.mat.mod.commands.*;
 
-@Mod(modid = "matsimplemod", version = "1.1", acceptedMinecraftVersions = "[1.8.9]")
+@Mod(modid = "matsimplemod", version = "1.3", acceptedMinecraftVersions = "[1.8.9]")
 public class MatMod {
 	
 	private static MatMod instance;
