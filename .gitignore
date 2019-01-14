@@ -8,3 +8,4 @@ build
 *.txt
 *.launch
 /bin
+/doc

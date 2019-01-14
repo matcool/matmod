@@ -1,6 +1,7 @@
 package rf.mat.mod.commands;
 
 import mat.requests.*;
+import rf.mat.mod.commands.CommandUtils;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.entity.EntityPlayerSP;
 import net.minecraft.command.*;
@@ -10,6 +11,8 @@ import net.minecraft.util.*;
 import rf.mat.mod.MatMod;
 
 import java.util.List;
+import java.util.stream.Collector;
+import java.util.stream.Collectors;
 
 import com.google.common.collect.Lists;
 import com.google.gson.Gson;
@@ -17,7 +20,6 @@ import com.google.gson.GsonBuilder;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
-import com.orangemarshall.enhancements.util.TabCompletionUtil;
 
 public class BWStatsCMD extends CommandBase {
 	
@@ -106,6 +108,6 @@ public class BWStatsCMD extends CommandBase {
 	}
 	
 	public List addTabCompletionOptions(final ICommandSender sender, final String[] args, final BlockPos pos) {
-        return (args.length == 1) ? TabCompletionUtil.getListOfStringsMatchingLastWord(args, TabCompletionUtil.getTabUsernames()) : null;
+		return (args.length == 1) ? CommandUtils.getSimilarStrings(CommandUtils.getTabUsernames(), args[args.length-1]) : null;
     }
 }
